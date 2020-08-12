@@ -33,7 +33,7 @@ def start(bot, update):
     bot.send_message(chat_id=update.effective_chat.id, text="Heya! I'm Luffy, a bot with random collection of images of dogs. Try sending me a '/bop'")
 
 def main():
-    updater = Updater('1133372318:AAGqkAt77Tv2Cah74ODMa5I0O30T352-jjA')
+    updater = Updater(token)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('bop',bop))
     dp.add_handler(CommandHandler('start',start))
